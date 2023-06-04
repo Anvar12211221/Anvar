@@ -4,7 +4,7 @@
     left: 0;
     padding: 1rem;
     width: 100%;
-    background: rgb(27, 27, 27);
+    background: black;
 }
 
 .header-wrapper {
@@ -35,7 +35,7 @@
 }
 
 .nav-link {
-    color: white;
+    color: red;
 }
 
 // MOBILE NAVIGATION
@@ -50,7 +50,7 @@
     font-size: 1rem;
 
     a {
-        color: white;
+        color: red;
     }
 
     @media screen and (max-width: 768px) {
@@ -71,7 +71,7 @@
 .m-nav-r-btn-off {
     all: unset;
     cursor: pointer;
-    color: white;
+    color: red;
     font-size: 30px;
 }
 
