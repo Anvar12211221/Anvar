@@ -2,4 +2,4 @@
 
 Это тестовая версия моей страницы.
 
-Link to site: https://my-app-delta-three.vercel.app/
+Вот здесь линк моего сайта: https://my-app-delta-three.vercel.app/
