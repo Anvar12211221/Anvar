@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
     & {
         padding: 0;
@@ -31,10 +33,13 @@
 }
 
 html {
-    color: black;
+    body {
+        color: white;
+        background: black;
+    }
 
     font: {
-        family: monospace;
+        family: 'Righteous', cursive;
         size: 1.2rem;
         style: normal;
         weight: 400;

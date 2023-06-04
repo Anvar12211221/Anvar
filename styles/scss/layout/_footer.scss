@@ -1,7 +1,8 @@
 .footer {
     margin-top: 4rem;
     color: white;
-    background: rgb(27, 27, 27);
+    background: black;
+    border-top: 2px solid red;
     
     a {
         text-decoration: underline;
@@ -78,25 +79,25 @@
         padding-left: 0.5rem;
     }
 
-    li:nth-child(1) {
+    li:nth-child(1),
+    li:nth-child(2) {
         a {
             img {
-                background: black;
+                background: red;
                 border-radius: 10px;
-            }
-        }
-    }
 
-    li:nth-child(2),
-    li:nth-child(3) {
-        a {
-            img {
-                background: white;
-                border-radius: 10px;
+                &:hover {
+                    min-width: 50px;
+                    min-height: 50px;
+                    transition: all 0.3s ease;
+                    background: white;
+                    border: 5px solid red;
+                }
             }
 
             &:hover {
-                filter: opacity(0.7);
+                min-width: 50px;
+                min-height: 50px;
             }
         }
     }

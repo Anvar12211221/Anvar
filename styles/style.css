@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   /* Track */
   /* Handle */
@@ -24,11 +25,14 @@
 }
 
 html {
-  color: black;
-  font-family: monospace;
+  font-family: "Righteous", cursive;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
+}
+html body {
+  color: white;
+  background: black;
 }
 @media screen and (max-width: 900px) {
   html {
@@ -163,7 +167,8 @@ html a:active {
   left: 0;
   padding: 1rem;
   width: 100%;
-  background: rgb(27, 27, 27);
+  background: black;
+  border-bottom: 2px solid red;
 }
 
 .header-wrapper {
@@ -194,7 +199,13 @@ html a:active {
 }
 
 .nav-link {
-  color: white;
+  color: red;
+}
+.nav-link:hover {
+  background: red;
+  color: whitesmoke;
+  font-size: 25px;
+  transition: all 1s ease position top;
 }
 
 .m-nav {
@@ -206,7 +217,7 @@ html a:active {
   font-size: 1rem;
 }
 .m-nav a {
-  color: white;
+  color: red;
 }
 @media screen and (max-width: 768px) {
   .m-nav {
@@ -227,7 +238,7 @@ html a:active {
 .m-nav-r-btn-off {
   all: unset;
   cursor: pointer;
-  color: white;
+  color: red;
   font-size: 30px;
 }
 
@@ -251,7 +262,6 @@ html a:active {
   height: 100%;
   background: black;
   z-index: 10;
-  animation: nav-anim all 3s linear;
   font-size: 1.5rem;
 }
 .m-nav-r-list li {
@@ -259,18 +269,11 @@ html a:active {
   top: -100px;
 }
 
-@keyframes nav-anim {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
 .footer {
   margin-top: 4rem;
   color: white;
-  background: rgb(27, 27, 27);
+  background: black;
+  border-top: 2px solid red;
 }
 .footer a {
   text-decoration: underline;
@@ -339,18 +342,23 @@ html a:active {
 .f-list-3 li {
   padding-left: 0.5rem;
 }
-.f-list-3 li:nth-child(1) a img {
-  background: black;
+.f-list-3 li:nth-child(1) a img,
+.f-list-3 li:nth-child(2) a img {
+  background: red;
   border-radius: 10px;
 }
-.f-list-3 li:nth-child(2) a img,
-.f-list-3 li:nth-child(3) a img {
+.f-list-3 li:nth-child(1) a img:hover,
+.f-list-3 li:nth-child(2) a img:hover {
+  min-width: 50px;
+  min-height: 50px;
+  transition: all 0.3s ease;
   background: white;
-  border-radius: 10px;
+  border: 5px solid red;
 }
-.f-list-3 li:nth-child(2) a:hover,
-.f-list-3 li:nth-child(3) a:hover {
-  filter: opacity(0.7);
+.f-list-3 li:nth-child(1) a:hover,
+.f-list-3 li:nth-child(2) a:hover {
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .f-list-1,
@@ -367,8 +375,14 @@ html a:active {
 }
 
 .h-p-article {
+  padding-top: 2vw;
   display: flex;
   justify-content: flex-start;
+}
+.h-p-article h1, .h-p-article h2, .h-p-article h3, .h-p-article h4, .h-p-article h5, .h-p-article h6 {
+  color: red;
+  text-decoration-line: overline;
+  text-decoration-color: white;
 }
 .h-p-article ul {
   list-style-type: disc;
@@ -376,8 +390,8 @@ html a:active {
 }
 .h-p-article .h-page-description {
   padding: 1rem;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   margin-bottom: 1rem;
 }
 .h-p-article .article-com-1 {
@@ -438,10 +452,7 @@ html a:active {
 }
 
 .dev-page {
-  height: 400px;
-  background: white;
-  color: black;
-  margin-bottom: 6.5rem;
+  margin-bottom: 22rem;
 }
 
 .main {
